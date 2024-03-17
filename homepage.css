@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+    scroll-behavior: smooth;
+}
+
+html{
+    background-image: url(./images/3.png);
+    background-attachment: fixed;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+body{
+    background:rgba(255, 255, 255, 0.463);
+}
+nav{
+
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #000;
+    border-radius: 10px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.menus ul{
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.menus ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.home{
+    margin-top: 110px;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+
+}
+
+.home .brandimage{
+    order: 2;
+    padding: 10px;
+    height: 600px;
+    border-radius: 50%;
+}
+
+.homecontent h1{
+    text-align: center;
+}
+.homecontent p{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.services img{
+    height: 400px;
+    width: 80%;
+    border-radius: 10%;
+}
+.services .sercontent{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    place-items: center;
+    gap: 20px;
+}
+.services div{
+    padding: 10px;
+    text-align: center;
+}
+
+.services .content a{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.aboutus{
+    min-height: 30vh;
+
+}
+.aboutus h1{
+    text-align: center;
+}
+.contactus{
+    /* min-height:50vh ; */
+    text-align: center;
+
+}
+section{
+    border-radius: 30px;
+    box-shadow: 0 0 15px black;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+.contactus{
+    background: rgb(128, 127, 127);
+    padding: 40px;
+    border-radius: 20px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+        
+}
+
+.contactus ul li{
+    list-style-type: none;
+}
+
+.contactus ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.contactus h1{
+    color: black;
+    font-size: 50px;
+}
+.serv{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+@media screen and (max-width:1010px) {
+ 
+    .home{
+        flex-direction: column;
+    }
+    .home img{
+        order: 0;
+        height: 300px;
+        width: 100%;
+    }
+    .homecontent{
+        order: 1;
+    }
+    .services .sercontent{
+        grid-template-columns: 1fr;
+    }
+    .sercontent .rescontent{
+        order: 1;
+    }
+}
